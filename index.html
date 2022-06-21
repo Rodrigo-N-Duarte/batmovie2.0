@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>BatMovie 2.0</title>
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="detalhefilme.htmlbootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li style="font-size: 40px;"><a href="index.html" class="nav-link px-2 text-secondary">BatMovie</a>
+                    </li>
+                </ul>
+
+                <form class="search-container">
+                   <input type="text" placeholder="Busca" id="campoBusca">
+                   <button type="submit" id="btnBusca" onclick="pesquisa()">Pesquisar</button>
+                  </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <h1 style="margin-top: 30px;"><strong>FILMES DO MOMENTO</strong></h1>
+            <div class="row" id="divListaFilmes">
+                <h1>Filmes populares</h1>
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do filme</h5>
+                        <a href="" class="btn btn-secondary">
+                            <button type="button" class="btn btn-secondary">Veja mais sobre essa obra</button></a>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    
+    <script src="/populares/appPopulares.js" defer></script>
+</body>
+
+</html>
