@@ -1,0 +1,35 @@
+#img
+{
+    width: 50%;
+}
+#titulo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#descricao
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+#nota
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#linguagem
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#idade
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+@media (max-width: 1024px) {
+    #img {width: 100%;}
+  }
+  @media (min-width: 1024px) {
+    #img {margin-left: 320px; margin-top: 20px;}
+  }
